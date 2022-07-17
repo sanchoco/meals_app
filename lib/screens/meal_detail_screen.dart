@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:meals_app/dummy_data.dart';
 
 class MealDetailScreen extends StatelessWidget {
@@ -55,7 +53,7 @@ class MealDetailScreen extends StatelessWidget {
             buildSectionTitle(context, 'Ingredients'),
             buildContainer(ListView.builder(
               itemBuilder: (ctx, index) => Card(
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).colorScheme.secondary,
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                   child: Text(
